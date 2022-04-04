@@ -1,4 +1,4 @@
-name: wisdem-win-utd-mdo
+name: wisdem-lin-utd-mdo
 channels:
   - conda-forge
   - defaults

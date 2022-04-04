@@ -15,8 +15,11 @@ Steps to install WISDEM&reg; via this branch:
 2.  Setup and activate the Anaconda environment via the environmentWin.yml/environmentLin.yml.
 
  		conda env create --file environmentWin.yml  # (Windows only)
+		conda activate wisdem-win-utd-mdo           # (Windows only)
+		
 		
 		conda env create --file environmentLin.yml  # (Linux only)
+		conda activate wisdem-lin-utd-mdo           # (Linux only)
 		
 		python setup.py develop
 		
@@ -29,6 +32,9 @@ Steps to install WISDEM&reg; via this branch:
 ## File changes in `moduleIssue4utdMDO` branch
 
 See changes to files compared to the `develop` branch here: https://github.com/mayankchetan/WISDEM/compare/develop...mayankchetan:moduleIssue4utdMDO
+
+
+# End of branch related update
 		
 # WISDEM&reg;
 
