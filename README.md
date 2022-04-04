@@ -1,18 +1,20 @@
 
 # `moduleIssue4utdMDO` branch
 
-This branch provides environment.yml files for Windows and Linux setups to solve issues related to dependency updates. It is a temporary solution to support the MDO class at UT Dallas. The BAR0 turbine model has been included in example 03_balde.
+This branch is a temporary solution to resolve issues related to dependency updates (the source is unknown). Environment files from working Windows and Linux Anaconda setups are provided. Additionally, the `BAR0` turbine model has been included in example `03_balde`.
+
+**Use this branch ONLY of you do not have a working WISDEM&reg; setup for the UT Dallas MDO class.**
 
 Steps to install WISDEM&reg; via this branch:
 
-1. Clone branch from a prompt (Anaconda3 Power Shell on Windows or Terminal.app on Mac); WISDEM&reg; requires [Anaconda 64-bit](https://www.anaconda.com/distribution/).
+1. Clone branch using a prompt (Anaconda3 Power Shell on Windows or Terminal.app on Mac); WISDEM&reg; requires [Anaconda 64-bit](https://www.anaconda.com/distribution/).
 
 		conda install -y git
-		git clone https://github.com/mayankchetan/WISDEM.git 
-		cd WISDEM
+		git clone https://github.com/mayankchetan/WISDEM.git wisdem-utd-mdo
+		cd wisdem-utd-mdo
 		git checkout moduleIssue4utdMDO
 		
-2.  Setup and activate the Anaconda environment via the environmentWin.yml/environmentLin.yml.
+2.  Setup and activate the Anaconda environment via the environmentWin.yml/environmentLin.yml file.
 
  		conda env create --file environmentWin.yml  # (Windows only)
 		conda activate wisdem-win-utd-mdo           # (Windows only)
@@ -34,7 +36,7 @@ Steps to install WISDEM&reg; via this branch:
 See changes to files compared to the `develop` branch here: https://github.com/mayankchetan/WISDEM/compare/develop...mayankchetan:moduleIssue4utdMDO
 
 
-# End of branch related update
+# End of branch related update #Woosh!!
 		
 # WISDEM&reg;
 
