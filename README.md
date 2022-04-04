@@ -1,3 +1,35 @@
+
+# `moduleIssue4utdMDO` branch
+
+This branch provides environment.yml files for Windows and Linux setups to solve issues related to dependency updates. It is a temporary solution to support the MDO class at UT Dallas. The BAR0 turbine model has been included in example 03_balde.
+
+Steps to install WISDEM&reg; via this branch:
+
+1. Clone branch from a prompt (Anaconda3 Power Shell on Windows or Terminal.app on Mac); WISDEM&reg; requires [Anaconda 64-bit](https://www.anaconda.com/distribution/).
+
+		conda install -y git
+		git clone https://github.com/mayankchetan/WISDEM.git 
+		cd WISDEM
+		git checkout moduleIssue4utdMDO
+		
+2.  Setup and activate the Anaconda environment via the environmentWin.yml/environmentLin.yml.
+
+ 		conda env create --file environmentWin.yml  # (Windows only)
+		
+		conda env create --file environmentLin.yml  # (Linux only)
+		
+		python setup.py develop
+		
+3. Run example `03_blade`.
+
+		cd example/03_blade
+		python blade_driver.py
+		
+		
+## File changes in `moduleIssue4utdMDO` branch
+
+See changes to files compared to the `develop` branch here: https://github.com/mayankchetan/WISDEM/compare/develop...mayankchetan:moduleIssue4utdMDO
+		
 # WISDEM&reg;
 
 [![Actions Status](https://github.com/WISDEM/WISDEM/workflows/CI_WISDEM/badge.svg?branch=develop)](https://github.com/WISDEM/WISDEM/actions)
